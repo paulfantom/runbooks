@@ -3,7 +3,7 @@ title: Prometheus Remote Write Behind
 weight: 20
 ---
 
-# PrometheusRemoteStorageFailures
+# PrometheusRemoteWriteBehind
 
 ## Meaning
 
@@ -22,8 +22,8 @@ Check configs and credentials.
 
 ## Mitigation
 
-Probbaly amout of data sent to remote system is too high
+Probably amount of data sent to remote system is too high
 for given network connectivity speed.
 You may need to limit which metrics to send to minimize transfers.
 
-See [Prometheus Remote Storage Failures]({{< ref "./PrometheusRemoteStorageFailures.md" >}})
+See [Prometheus Remote Write Behind]({{< ref "./PrometheusRemoteWriteBehind.md" >}})
