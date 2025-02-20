@@ -16,6 +16,7 @@ Failure of processing of a scheduled task.
 ## Diagnosis
 
 - Check job via `kubectl -n $NAMESPACE describe jobs $JOB`.
+- Identify `$POD_FROM_JOB` via `kubectl -n $NAMESPACE get pods --selector=job-name=$JOB`.
 - Check pod events via `kubectl -n $NAMESPACE describe pod $POD_FROM_JOB`.
 - Check pod logs via `kubectl -n $NAMESPACE log pod $POD_FROM_JOB`.
 
